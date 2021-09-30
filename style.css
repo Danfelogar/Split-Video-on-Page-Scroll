@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #222;
+    min-height: 300vh;
+}
+
+section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+section .side{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section .side#side1 {
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    /* se le da forma de triangulo con esto para "1" esquina inferior izq */
+}
+
+section .side#side2 {
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+    /* se le da forma de triangulo con esto para "2" esquina superior derch */
+}
+
+section .side video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content{
+    margin-top: 150vh;
+    color: #fff;
+    padding: 50px;
+}
+
+.content h2{
+    font-size: 3em;
+}
+
+.content p{
+    font-size: 1.2em;
+}
